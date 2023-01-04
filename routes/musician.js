@@ -9,6 +9,13 @@ router.get('/health', (req, res) => {
   res.status('200').send("Status: ok!");
 });
 
+// cd check
+
+// healthcheck
+router.get('/cd', (req, res) => {
+  res.status('200').send("Continuos deployment: ok!");
+});
+
 // retrieve all musicians from data store
 router.get('/all', (req, res) => {
   const { musician } = req.app.locals;
