@@ -11,9 +11,12 @@ router.get('/health', (req, res) => {
 
 // cd check
 
-// healthcheck
 router.get('/cd', (req, res) => {
   res.status('200').send("Continuos deployment: ok!");
+});
+
+router.get('/envcheck', (req, res) =>{
+  res.status('200').send(`env variable is ${process.env.STATUS}`);
 });
 
 // retrieve all musicians from data store
