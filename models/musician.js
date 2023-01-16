@@ -35,7 +35,7 @@ class Musician {
     if(this.isMusicianInStore(id)) {
       return callback(null, this.store[id]);
     }
-    return callback('Musician does not exist');
+    return callback('Route does not exist');
   }
 
   // modify existing musician or add a new one to storage
