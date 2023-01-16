@@ -6,7 +6,7 @@ const schema = require('../store/schema');
 
 // for aeries
 
-router.get('/health', (req, res) => {
+router.get('/aeries', (req, res) => {
   res.status('200').send("This route is for Aeries!");
 });
 
