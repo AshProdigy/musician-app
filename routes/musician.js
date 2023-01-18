@@ -4,13 +4,17 @@ const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 const schema = require('../store/schema');
 
+// aeries endpoint
+router.get('/aeries', (req, res) => {
+  res.status('200').send("message: Welcome to aeries music group!");
+});
+
 // healthcheck
 router.get('/health', (req, res) => {
   res.status('200').send("Status: ok!");
 });
 
 // cd check
-
 router.get('/cd', (req, res) => {
   res.status('200').send("Continuos deployment: ok!");
 });
