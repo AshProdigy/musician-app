@@ -4,6 +4,13 @@ const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 const schema = require('../store/schema');
 
+
+// for aeries
+router.get('/aeries', (req, res) => {
+  res.status('200').send("This app is for Aeries!");
+});
+
+
 // healthcheck
 router.get('/health', (req, res) => {
   res.status('200').send("Status: ok!");
